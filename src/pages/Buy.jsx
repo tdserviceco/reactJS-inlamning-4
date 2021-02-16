@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import {
-  useHistory,
-  useParams
+  Link,
+  useLocation
 } from "react-router-dom";
 function Buy(props) {
-  let { id } = useParams();
-  let history = useHistory();
+  const useQuery = () => {
+    return new URLSearchParams(useLocation().search);
+  }
+  let query = useQuery();
   const getEvent = async () => {
-    return await Axios.get(`http://localhost:8080/get/event/${id}`);
+    return await Axios.get(`http://localhost:8080/get/event/${query.get('ticket-id')}`);
   }
 
   const [event, updateEvent] = useState([{}])
-  
+
   useEffect(() => {
     getEvent().then(res => {
-      console.log(res)
       updateEvent(res.data)
     });
   }, [])
@@ -30,7 +31,7 @@ function Buy(props) {
         <h3 className="score-tickets">You are about to score
           <span>some tickets to</span>
         </h3>
-        <h2 class="ticket-title">
+        <h2 className="ticket-title">
           {event.title}
         </h2>
         <h4 className="date-and-time">
@@ -39,7 +40,7 @@ function Buy(props) {
         </h4>
         <h4 className="location">@ {event.location}</h4>
         <h3 className="price">{event.price}</h3>
-        <button type="button" onClick={() => history.push(`/tickets/${event.id}`)}>Order</button>
+        <Link to={`tickets?id=${query.get('ticket-id')}`} className="btn link-btn">Order</Link>
       </div>
 
     </section>

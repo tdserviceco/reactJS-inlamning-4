@@ -22,10 +22,10 @@ function App() {
           <Route exact path="/events">
             <Events />
           </Route>
-          <Route exact path="/buy/ticket-:id">
+          <Route exact path="/buy">
             <Buy />
           </Route>
-          <Route exact path="/tickets/:id">
+          <Route exact path="/tickets">
             <Tickets />
           </Route>
           <Route path="*">

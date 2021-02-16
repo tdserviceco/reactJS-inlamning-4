@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 function displayEvents(props) {
   return (
-    <Link className={`event-${props.value.id}`} to={`/buy/ticket-${props.value.id}`}>
+    <Link className={`event-${props.value.id}`} to={`/buy?ticket-id=${props.value.id}`}>
       <div className="event-container">
         <aside className="event-date-box">
           <h3 className="event-date">{props.value.date}</h3>

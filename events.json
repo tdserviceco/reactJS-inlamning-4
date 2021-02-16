@@ -4,6 +4,8 @@
     "title": "Lasse-Stefanz",
     "location": "Kjell Härnqvistsalen",
     "time": "19.00 - 21.00",
+    "from" : "19:00",
+    "to": "21:00",
     "date": "21 mar",
     "price": "350"
   },
@@ -12,6 +14,8 @@
     "title": "Pelle trubadur",
     "location": "Pubelipuben",
     "time": "22.00 - 00.00",
+    "from" : "22:00",
+    "to": "00:00",
     "date": "29 mar",
     "price": "110"
   },
@@ -20,6 +24,8 @@
     "title": "Kajsas kör",
     "location": "Götaplatsen",
     "time": "15.00 - 16.00",
+    "from" : "15:00",
+    "to": "16:00",
     "date": "10 apr",
     "price": "99"
   },
@@ -28,6 +34,8 @@
     "title": "Klubb Untz",
     "location": "Din favoritkällare",
     "time": "22.00 - du tröttnar",
+    "from" : "22:00",
+    "to": "du tröttnar",
     "date": "17 apr",
     "price": "150"
   }
