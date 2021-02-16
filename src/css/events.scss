@@ -1,0 +1,79 @@
+.events-section {
+  a {
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .title {
+    font-family: $sansita;
+    font-weight: 400;
+    color: $pink;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 4rem 0;
+  }
+
+  .event-container {
+    color: $white;
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    width: 100%;
+    justify-content: space-between;
+
+    .event-date-box {
+      width: 3.125rem;
+      height: 3.125rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 0.2rem;
+      margin-right: 2rem;
+      border: 0.0625rem solid $white;
+      font-family: $firasans;
+      font-weight: 700;
+      .event-date {
+        text-align: center;
+      }
+    }
+    .event-info-box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .event-title {
+        font-family: $firasans;
+        font-weight: 600;
+        color: $white;
+        text-shadow: 0.0625rem 0.0625rem 0 $pink;
+        font-size: 1.375rem;
+      }
+      .event-location {
+        font-size: 0.75rem;
+        font-weight: normal;
+        font-family: $firasans;
+        font-style: italic;
+        color: $light;
+        line-height: 2rem;
+      }
+      .event-time-and-price-box {
+        display: flex;
+        justify-content: space-between;
+        width: 12.5rem;
+        .event-time {
+          font-size: 0.875rem;
+          line-height: 1rem;
+          font-family: $firasans;
+          font-weight: 600;
+        }
+        .event-price {
+          font-size: 1.0625rem;
+          color: $teal;
+          font-weight: 700;
+          line-height: 1rem;
+          font-family: $firasans;
+        }
+      }
+    }
+  }
+}

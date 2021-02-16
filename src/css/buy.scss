@@ -1,0 +1,67 @@
+.buy-section {
+
+  .score-tickets {
+    padding: 8rem ;
+    color: rgba(255,255,255,0.8);
+    font-family: $firasans;
+    font-weight: 400;
+    font-size: 1.1875rem;
+    font-style: italic;
+    text-align: center;
+    width: 18.75rem;
+    margin: 0 auto;
+  }
+  .ticket-title {
+    font-size: 2.1875rem;
+    font-family: $sansita;
+    line-height: 2.54875rem;
+    text-align: center;
+    font-style: italic;
+    color: $pink;
+    font-weight: 700;
+  }
+  .date-and-time {
+    font-family: $firasans;
+    font-size: 1.1875rem; 
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    color: $teal;
+    line-height: 3rem;
+    :first-child {
+      padding-right: 0.5rem;
+    }
+    :last-child {
+      padding-left: 0.5rem;
+    }
+  }
+  .location {
+    text-align: center;
+    font-family: $firasans;
+    font-weight: normal;
+    color: $semi-light;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .price {
+    text-align: center;
+    font-size: 2rem;
+    font-family: $firasans;
+    font-weight: 700;
+    color: $white;
+    text-shadow: 0.0625rem 0.0625rem 0 $pink;
+    margin-bottom: 4rem;
+  }
+
+  .link-btn {
+    background: $teal;
+    border: 0.0265rem solid rgba(0,0,0,0.3);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 0.1875rem
+  }
+}

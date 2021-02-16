@@ -4,6 +4,7 @@ import {
   useLocation
 } from "react-router-dom";
 function Tickets(props) {
+
   const useQuery = () => {
     return new URLSearchParams(useLocation().search);
   }
@@ -14,6 +15,7 @@ function Tickets(props) {
 
   const [event, updateEvent] = useState([{}]);
 
+
   useEffect(() => {
     getEvent().then(res => {
       updateEvent(res.data)
@@ -23,28 +25,43 @@ function Tickets(props) {
   useEffect(() => {
     document.title = `Thanks for buying ${event.title}`
   }, [getEvent()])
+
+  const newDate = () => {
+    let date;
+    date = new String(event.date)
+    return date.length >= 3 ? date.substr(0, 6) : ''
+  }
+
   return (
-    <section className="ticket-layout">
-      <div class="ticket-container">
+    
+    <section className="ticket-section">
+      <div className="ticket-container">
         <h1 className="confirmation">Thanks for the order</h1>
-        <div class="ticket-content">
+        <div className="ticket-content">
           <div className="what">
             <span>what</span>
             <h4>{event.title}</h4>
           </div>
           <div className="where">
             <span>where</span>
-            <h4>{event.title}</h4>
+            <h4>{event.location}</h4>
           </div>
           <div className="time-and-date">
-            <div class="date">
-              {event.date}
+            <div className="date">
+              <span>when</span>
+              <h5>
+                {newDate()}
+              </h5>
             </div>
             <div className="from">
-              {event.from}
+              <span>from</span>
+              <h5>{event.from}</h5>
             </div>
             <div className="to">
-              {event.to}
+              <span>to</span>
+              <h5>
+                {event.to}
+              </h5>
             </div>
           </div>
         </div>

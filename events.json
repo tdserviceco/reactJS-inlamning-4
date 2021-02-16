@@ -6,7 +6,7 @@
     "time": "19.00 - 21.00",
     "from" : "19:00",
     "to": "21:00",
-    "date": "21 mar",
+    "date": "21 mars",
     "price": "350"
   },
   {
@@ -16,7 +16,7 @@
     "time": "22.00 - 00.00",
     "from" : "22:00",
     "to": "00:00",
-    "date": "29 mar",
+    "date": "29 mars",
     "price": "110"
   },
   {
@@ -26,7 +26,7 @@
     "time": "15.00 - 16.00",
     "from" : "15:00",
     "to": "16:00",
-    "date": "10 apr",
+    "date": "10 april",
     "price": "99"
   },
   {
@@ -36,7 +36,7 @@
     "time": "22.00 - du tröttnar",
     "from" : "22:00",
     "to": "du tröttnar",
-    "date": "17 apr",
+    "date": "17 april",
     "price": "150"
   }
 ]

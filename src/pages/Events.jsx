@@ -24,12 +24,12 @@ function Events(props) {
       {loading &&
         <h1>LOADING...</h1>
       }
-      <div className="events">
+      <section className="events-section">
         <h2 className="title">events</h2>
         {
           events.map((index, key) => <DisplayEvents key={key} value={index} />)
         }
-      </div>
+      </section>
     </>
   );
 }

@@ -1,0 +1,82 @@
+.ticket-section {
+  .confirmation {
+    text-align: center;
+    margin: 4rem auto;
+    font-weight: 700;
+    font-family: $firasans;
+    font-size: 2.1875rem;
+    width: 80%;
+    color: $pink;
+    font-style: italic;
+  }
+
+  .ticket-content {
+    background: $white;
+    border-radius: 0.1875rem;
+    border: 0.06625rem solid $semi-light;
+    font-family: $firasans;
+
+    .what,
+    .where {
+      span {
+        padding: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $grey;
+        font-size: 0.625rem;
+      }
+      h4 {
+        padding: 1rem;
+        font-size: 1.1625rem;
+        font-weight: 700;
+        font-style: italic;
+        color: $pink;
+      }
+    }
+
+    .what {
+      border-bottom: 0.0625rem dotted $grey;
+      margin: 1rem 0;
+    }
+
+    .where {
+      h4 {
+        color: rgba(0, 0, 0, 0.7);
+        font-style: normal;
+      }
+      padding-bottom: 2rem;
+      border-bottom: 0.0625rem dotted $grey;
+    }
+    
+  }
+  .time-and-date {
+    display: flex;
+    justify-content: space-evenly;
+    span {
+      padding: 0.5rem 0;
+      display: flex;
+      font-family: $firasans;
+      font-weight: 700;
+      font-size: 0.625rem;
+      color: $grey;
+    }
+
+    h5 {
+      text-transform: capitalize;
+      font-size: 1.1875rem;
+      font-weight: 600;
+      padding-bottom: 1rem;
+      color: rgba(0,0,0,0.6);
+    }
+
+    .to,.from,.date {
+      text-transform: uppercase;
+      padding: 0rem 2rem;
+    }
+
+    .from { 
+      border-left: 0.0625rem dotted $grey;
+      border-right: 0.0625rem dotted $grey;
+    }
+  }
+}

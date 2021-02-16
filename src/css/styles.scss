@@ -1,2 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,700&family=Sansita&display=swap');
 @import "./reset.scss";
+main {
+  // Fonts
+  $sansita : 'Sansita', sans-serif;
+  $firasans : 'Fira Sans', sans-serif;
 
+  // Colours
+  $pink : #F56B9A;
+  $bg : #231F42;
+  $white: #fff;
+  $light : rgba(255, 255, 255, 0.8);
+  $teal : #37AEAB;
+  $semi-light : rgba(255, 255, 255, 0.7); 
+  $grey : rgba(0,0,0,0.4);
+  $black : rgba(0,0,0,0.7);
+  
+  // Pre-sets
+  background: $bg;
+  min-height: 100vh;
+  width: 100%;
+
+  .events-section,
+  .buy-section,
+  .ticket-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .btn {
+    font-family: $firasans;
+    font-weight: 700;
+    width: 4rem;
+    padding: 1.2rem 4rem;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  @import './events.scss';
+  @import './buy.scss';
+  @import './ticket.scss';
+}

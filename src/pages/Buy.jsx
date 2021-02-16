@@ -28,18 +28,18 @@ function Buy(props) {
   return (
     <section className="buy-section">
       <div className="buy-container">
-        <h3 className="score-tickets">You are about to score
-          <span>some tickets to</span>
+        <h3 className="score-tickets">
+          You are about to score some tickets to
         </h3>
-        <h2 className="ticket-title">
+        <h1 className="ticket-title">
           {event.title}
-        </h2>
-        <h4 className="date-and-time">
+        </h1>
+        <div className="date-and-time">
           <span className="date">{event.date}</span>
-          <span className="time">{event.time}</span>
-        </h4>
+          <span className="time">Kl {event.time}</span>
+        </div>
         <h4 className="location">@ {event.location}</h4>
-        <h3 className="price">{event.price}</h3>
+        <h2 className="price">{event.price} sek</h2>
         <Link to={`tickets?id=${query.get('ticket-id')}`} className="btn link-btn">Order</Link>
       </div>
 
