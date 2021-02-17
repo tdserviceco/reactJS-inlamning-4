@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,700&family=Sansita&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,700&family=Sansita&display=swap");
 @import "./reset.scss";
 main {
   // Fonts
-  $sansita : 'Sansita', sans-serif;
-  $firasans : 'Fira Sans', sans-serif;
+  $sansita: "Sansita", sans-serif;
+  $firasans: "Fira Sans", sans-serif;
 
   // Colours
-  $pink : #F56B9A;
-  $bg : #231F42;
+  $pink: #f56b9a;
+  $bg: #231f42;
   $white: #fff;
-  $light : rgba(255, 255, 255, 0.8);
-  $teal : #37AEAB;
-  $semi-light : rgba(255, 255, 255, 0.7); 
-  $grey : rgba(0,0,0,0.4);
-  $black : rgba(0,0,0,0.7);
-  
+  $light: rgba(255, 255, 255, 0.8);
+  $teal: #37aeab;
+  $semi-light: rgba(255, 255, 255, 0.7);
+  $grey: rgba(0, 0, 0, 0.4);
+  $black: rgba(0, 0, 0, 0.7);
+  $superLightDark: rgba(0, 0, 0, 0.06);
+
   // Pre-sets
   background: $bg;
   min-height: 100vh;
@@ -41,7 +42,7 @@ main {
     justify-content: center;
   }
 
-  @import './events.scss';
-  @import './buy.scss';
-  @import './ticket.scss';
+  @import "./events.scss";
+  @import "./buy.scss";
+  @import "./ticket.scss";
 }

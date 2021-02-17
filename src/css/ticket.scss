@@ -13,8 +13,9 @@
   .ticket-content {
     background: $white;
     border-radius: 0.1875rem;
-    border: 0.06625rem solid $semi-light;
+    padding: 0.0625rem;
     font-family: $firasans;
+    border-bottom: 0.0625rem dotted $grey;
 
     .what,
     .where {
@@ -44,14 +45,13 @@
         color: rgba(0, 0, 0, 0.7);
         font-style: normal;
       }
-      padding-bottom: 2rem;
+      padding-bottom: 4rem;
       border-bottom: 0.0625rem dotted $grey;
     }
-    
   }
   .time-and-date {
     display: flex;
-    justify-content: space-evenly;
+    background: $superLightDark;
     span {
       padding: 0.5rem 0;
       display: flex;
@@ -62,19 +62,22 @@
     }
 
     h5 {
+      font-family: $firasans;
       text-transform: capitalize;
-      font-size: 1.1875rem;
+      font-size: 1.125rem;
       font-weight: 600;
       padding-bottom: 1rem;
-      color: rgba(0,0,0,0.6);
+      color: rgba(0, 0, 0, 0.6);
     }
 
-    .to,.from,.date {
+    .to,
+    .from,
+    .date {
       text-transform: uppercase;
       padding: 0rem 2rem;
     }
 
-    .from { 
+    .from {
       border-left: 0.0625rem dotted $grey;
       border-right: 0.0625rem dotted $grey;
     }

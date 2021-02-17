@@ -36,7 +36,7 @@ function Buy(props) {
         </h1>
         <div className="date-and-time">
           <span className="date">{event.date}</span>
-          <span className="time">Kl {event.time}</span>
+          <span className="time">kl {event.from} - {event.to}</span>
         </div>
         <h4 className="location">@ {event.location}</h4>
         <h2 className="price">{event.price} sek</h2>

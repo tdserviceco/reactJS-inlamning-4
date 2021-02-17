@@ -22,25 +22,35 @@
     justify-content: space-between;
 
     .event-date-box {
-      width: 3.125rem;
-      height: 3.125rem;
+      width: 4.125rem;
+      height: 4.125rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 1rem;
       border-radius: 0.2rem;
       margin-right: 2rem;
       border: 0.0625rem solid $white;
       font-family: $firasans;
       font-weight: 700;
+
       .event-date {
+        width: 3.125rem;
+        height: 3.125rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+        text-transform: uppercase;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
       }
     }
     .event-info-box {
       display: flex;
       flex-direction: column;
       width: 100%;
+      border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.3);
       .event-title {
         font-family: $firasans;
         font-weight: 600;
@@ -60,6 +70,7 @@
         display: flex;
         justify-content: space-between;
         width: 12.5rem;
+        padding-bottom: 0.2rem;
         .event-time {
           font-size: 0.875rem;
           line-height: 1rem;

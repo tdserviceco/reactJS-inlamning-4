@@ -1,8 +1,7 @@
 .buy-section {
-
   .score-tickets {
-    padding: 8rem ;
-    color: rgba(255,255,255,0.8);
+    padding: 8rem;
+    color: rgba(255, 255, 255, 0.8);
     font-family: $firasans;
     font-weight: 400;
     font-size: 1.1875rem;
@@ -22,7 +21,7 @@
   }
   .date-and-time {
     font-family: $firasans;
-    font-size: 1.1875rem; 
+    font-size: 1.1875rem;
     display: flex;
     font-weight: 700;
     justify-content: center;
@@ -30,10 +29,7 @@
     color: $teal;
     line-height: 3rem;
     :first-child {
-      padding-right: 0.5rem;
-    }
-    :last-child {
-      padding-left: 0.5rem;
+      padding-right: 0.3rem;
     }
   }
   .location {
@@ -58,10 +54,10 @@
 
   .link-btn {
     background: $teal;
-    border: 0.0265rem solid rgba(0,0,0,0.3);
+    border: 0.0265rem solid rgba(0, 0, 0, 0.3);
     text-decoration: none;
     text-transform: uppercase;
     color: $white;
-    border-radius: 0.1875rem
+    border-radius: 0.1875rem;
   }
 }

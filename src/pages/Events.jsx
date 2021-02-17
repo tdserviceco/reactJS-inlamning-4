@@ -4,9 +4,7 @@ import DisplayEvents from '../components/displayEvents';
 
 function Events(props) {
 
-  const
-    [events, updateEvents] = useState([{}]),
-    [loading, updateLoading] = useState(true);
+  const [events, updateEvents] = useState([{}]);
   const getEvents = async () => {
     return await Axios.get('http://localhost:8080/get/events');
   }
@@ -15,15 +13,11 @@ function Events(props) {
     document.title = 'Events'
     getEvents().then(res => {
       updateEvents(res.data)
-      updateLoading(false)
     })
   }, [])
 
   return (
     <>
-      {loading &&
-        <h1>LOADING...</h1>
-      }
       <section className="events-section">
         <h2 className="title">events</h2>
         {

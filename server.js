@@ -14,17 +14,17 @@ app.options('*', cors()) // include before other routes
 app.use(cors())
 
 app.get('/get/events', function (req, res) {
- res.json(events)
+  res.json(events)
 });
 
 app.get('/get/event/:id', function (req, res) {
   const event = events.find(event => event.id === req.params.id)
   res.json(event)
- });
+});
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-console.log('listen to: http://localhost:'+port)
+console.log('listen to: http://localhost:' + port)
 app.listen(port);

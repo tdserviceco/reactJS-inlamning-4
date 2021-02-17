@@ -33,7 +33,7 @@ function Tickets(props) {
   }
 
   return (
-    
+
     <section className="ticket-section">
       <div className="ticket-container">
         <h1 className="confirmation">Thanks for the order</h1>
