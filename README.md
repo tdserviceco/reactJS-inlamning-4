@@ -20,6 +20,4 @@ Minor warning:
 ***
 If you get `'cross-env' is not recognized as an internal or external command,
 operable program or batch file.` then use these commands to "fix" it.
-`rm -rf node_modules && rm package-lock.json && npm cache clear --force`
-
-then use `npm i && npm start`
+`rm -rf node_modules && rm package-lock.json && npm cache clear --force && npm i && npm start`

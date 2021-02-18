@@ -21,6 +21,14 @@ main {
   min-height: 100vh;
   width: 100%;
 
+  .error {
+    font-size: 48px;
+    font-family: $firasans;
+    font-weight: 700;
+    color: $pink;
+    padding: 4rem;
+  }
+
   .events-section,
   .buy-section,
   .ticket-section {
