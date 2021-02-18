@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,700&family=Sansita&display=swap");
 @import "./reset.scss";
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 main {
   // Fonts
   $sansita: "Sansita", sans-serif;
@@ -27,6 +37,15 @@ main {
     font-weight: 700;
     color: $pink;
     padding: 4rem;
+  }
+
+  .loader {
+    border: 1rem solid #f3f3f3; /* Light grey */
+    border-top: 1rem solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 7.5rem;
+    height: 7.5rem;
+    animation: spin 2s linear infinite;
   }
 
   .events-section,
